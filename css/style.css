@@ -1,22 +1,26 @@
-header {
-  background-color: #efefef;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 body {
   color: #333333;
+  font-size: 62.5%;
   font-family: Verdana, sans-serif;
   margin: 0;
 }
 
-.container {
-  width: 400px;
+.header-container, .works {
+  width: 480px;
   margin: 0 auto;
+}
+
+
+
+.header {
+  background-color: #efefef;
+  padding: 32px 0;
+}
+
+.header-container {
   display: flex;
   align-items: center;
 }
-
 
 .icon img {
   /* 画像枠の形を丸く。1辺の半径を円の半径とする */
@@ -30,57 +34,91 @@ body {
   margin-left: 32px;
 }
 
-.information h1 {
-  font-weight: normal;
-  font-size: 24px;
-  margin: 0;
-}
-
-.information p {
-  margin: 0;
-  margin-bottom: 16px;
-}
-
-.information ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+.information-container {
   display: flex;
+  align-items: bottom;
 }
 
-.information ul li {
-  margin-right: 8px;
-}
-
-.works {
-  width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.works > h1 {
+.information-header {
   font-weight: normal;
-  font-size: 24px;
+  font-size: 1.6rem;
+  margin: 0;
+  float: left;
+}
+
+.fab {
+  padding-left: 32px;
+  color: #7263aa;
+}
+
+.information-body {
+  margin: 16px 0 16px;
+  font-size: 1.1rem;
+}
+
+
+
+.works-header {
+  font-weight: normal;
+  font-size: 2.4rem;
   text-align: center;
   margin-top: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
-.works > section {
+.works-container {
   margin-bottom: 60px;
+  background-color: #efefef;
+  padding: 40px 0;
+  border-radius: 5%;
 }
 
-.works > section > h1 {
+.works-image {
+  width: 400px;
+  height: 260px;
+  margin: 0 auto;
+}
+
+.image__01 {
+  background: url(/images/Himawari.png) center top no-repeat;
+  background-size: cover;
+}
+
+.image__02 {
+  background: url(/images/KROWL02.png) center top no-repeat;
+  background-size: cover;
+}
+
+.image__03 {
+  background: url(/images/flower.png) center top no-repeat;
+  background-size: cover;
+}
+
+.works-contents {
+  width: 400px;
+  margin: 0 auto;
+  
+}
+
+.works-contents-header {
+  font-size: 1.2rem;
   font-weight: normal;
 }
 
-.works p {
+.works-contents-body {
+  font-size: 1.0rem;
   line-height: 1.8;
 }
 
-footer p {
+
+
+.footer {
+  background-color: #efefef;
+  padding: 32px 0;
+}
+
+.footer-body {
   text-align: center;
-  font-size: 14px;
-  margin-bottom: 60px;
+  font-size: 0.5rem;
   color: gray;
 }
