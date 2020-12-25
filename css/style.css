@@ -94,17 +94,17 @@ body {
 }
 
 .image__01 {
-  background: url(/images/KROWL02.png) center top no-repeat;
+  background: url(./images/KROWL02.png) center top no-repeat;
   background-size: cover;
 }
 
 .image__02 {
-  background: url(/images/KROWL03.png) center top no-repeat;
+  background: url(./images/KROWL03.png) center top no-repeat;
   background-size: cover;
 }
 
 .image__03 {
-  background: url(/images/flower.png) center top no-repeat;
+  background: url(./images/crista01.png) center top no-repeat;
   background-size: cover;
 }
 
