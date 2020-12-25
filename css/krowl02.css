@@ -22,7 +22,7 @@ b, strong, .bold {
 
 .main-visual {
   padding-top: 40%;
-  background: url(/images/bg-main_visual.jpg) center top no-repeat;
+  background: url('../images/bg-main_visual.jpg') center top no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -55,7 +55,7 @@ b, strong, .bold {
 }
 
 .bg-image {
-  background: url(/images/bg-content.jpg) center center no-repeat;
+  background: url('../images/bg-content.jpg') center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
   padding-bottom: 100px;

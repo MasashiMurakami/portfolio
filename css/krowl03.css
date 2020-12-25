@@ -19,7 +19,7 @@ a {
 ========== */
 .main-visual {
   padding-top: 40%;
-  background: url(/images/main_visual.jpg) center top no-repeat;
+  background: url('../images/main_visual.jpg') center top no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -373,16 +373,16 @@ a {
 }
 
 .voice__img01 {
-  background-image: url(/images/photo-mr_okochi.jpg);
+  background-image: url('../images/photo-mr_okochi.jpg');
 }
 .voice__img02 {
-  background-image: url(/images/photo-ms_kagari.jpg);
+  background-image: url('../images/photo-ms_kagari.jpg');
 }
 .voice__img03 {
-  background-image: url(/images/photo-mr_nakajima.jpg);
+  background-image: url('../images/photo-mr_nakajima.jpg');
 }
 .voice__img04 {
-  background-image: url(/images/photo-mr_davis.jpg);
+  background-image: url('..//images/photo-mr_davis.jpg');
 }
 
 .voices .voices-container .voices-contents .voice-name {
