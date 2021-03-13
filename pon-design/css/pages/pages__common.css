@@ -1,10 +1,10 @@
 /* import common parts */
-@import url("/css/common.css");
+@import url("../common.css");
 
 .pages__topView {
   width: 100%;
   height: 240px;
-  background: url(/img/hero.jpg) center center no-repeat;
+  background: url(../../img/hero.jpg) center center no-repeat;
   background-size: cover;
   position: relative;
 }
