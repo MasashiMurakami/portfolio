@@ -7,7 +7,7 @@ $(function(){
   img_link = "." + img_link;
   $("img").attr("src", img_link);
 
-  var css__link = $(".head__mycss link").attr("href");
+  var css__link = $(".head__mycss").attr("href");
   css__link = "." + css__link;
   $(".head__mycss link").attr("href", css__link);
 });
