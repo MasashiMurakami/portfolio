@@ -11,9 +11,9 @@ $(function(){
     $(obj).attr("src", "." + img_link);
   });
   
-  $("link[href^='/']").each(function() {
+  $("head link[href^='/']").each(function() {
     var obj = $(this);
-    var css__link = $("link[href^='/']").attr("href");
+    var css__link = $("head link[href^='/']").attr("href");
     obj.attr("href", "." + css__link);
   });
 
