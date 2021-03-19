@@ -10,7 +10,7 @@
 /*        */
 .header {
   width: 100%;
-  height: 740px; 
+  height: 100vh; 
   overflow: hidden;
   position: relative;
 }
@@ -19,6 +19,7 @@
   width: 1100px;
   height: 640px;
   background: url(../img/kv-img@2x.jpg) center/cover no-repeat;
+  object-fit: cover;
   position: relative;
   z-index: 1;
 }
@@ -82,8 +83,8 @@
 }
 
 .about__background {
-  width: 1100px;
-  height: 607px;
+  max-width: 1100px;
+  min-height: 607px;
   margin: 120px auto 0;
   padding-top: 110px;
   padding-left: 50px;
@@ -91,8 +92,8 @@
 }
 
 .about__contents {
-  width: 590px;
-  height: 387px;
+  max-width: 590px;
+  min-height: 387px;
   padding: 50px 30px;
   background-color: #fff;
   position: relative;
@@ -127,16 +128,24 @@
 /*                 */
 .works-culture__background {
   background-color: #F0F0F0;
-  padding: 0 170px;
+  width: 100%;
+}
+
+.works-culture__contents {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding-bottom: 60px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .works-culture {
+  display: flex;
+  flex-flow: column wrap;
   width: 520px;
   height: 531px;
-  padding-top: 80px;
-  padding-bottom: 60px;
+  margin: 80px 30px 0;
 }
 
 .works-culture__img {
@@ -160,13 +169,13 @@
 /* TOPICS */
 /*        */
 .topic__contents {
-  width: 1100px;
+  max-width: 1160px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 60px 30px;
 }
 
 .topic__ul {
-  width: 700px;
+  max-width: 700px;
   padding-top: 30px;
   margin-left: auto;
 }
@@ -211,15 +220,28 @@
 }
 
 .contact__contents {
-  width: 1100px;
+  max-width: 1160px;
   margin: 0 auto;
+  padding: 0 30px;
   display: flex;
-  justify-content: space-between;
+  flex-flow: row-reverse wrap;
+  justify-content: flex-end;
 }
 
 .contact__contents-left {
+  max-width: 580px;
+  /* height: auto; */
+}
+
+.contact__img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contact__contents-right {
   width: 440px;
   margin-top: 72px;
+  margin-right: auto;
 }
 
 .contact__text {
@@ -231,9 +253,4 @@
 
 .link__button__contact {
   margin-top: 53px;
-}
-
-.contact__img {
-  width: 580px;
-  height: 390px;
 }

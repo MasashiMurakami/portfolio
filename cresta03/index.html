@@ -1,22 +1,22 @@
  <!DOCTYPE html>
  <html lang="ja">
    <head>
-    <base href="{{site.github.url}}" charset="utf-8"/>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Crista 03 index</title>
-    <link rel="stylesheet" type="text/css" href="./css/html5reset-1.6.1.css">
-    <link rel="stylesheet" type="text/css" href="./css/hamburger.css">
-    <link rel="stylesheet" type="text/css" href="./css/index.css">
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Crista 03 index</title>
+      <link rel="stylesheet" type="text/css" href="./css/html5reset-1.6.1.css">
+      <link rel="stylesheet" type="text/css" href="./css/index.css">
+      <link rel="stylesheet" type="text/css" href="./css/index-tablet.css">
+      <link rel="stylesheet" type="text/css" href="./css/index-sp.css">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-    
-    <script type="text/javascript"
-            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/desvg@1.0.2/desvg.min.js"></script>
-    <script type="text/javascript" src="./js/my.js"></script>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+      
+      <script type="text/javascript"
+              src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/desvg@1.0.2/desvg.min.js"></script>
+      <script type="text/javascript" src="./js/my.js"></script>
    </head>
    <body>
      <header class="header">
@@ -49,20 +49,20 @@
         <span></span>
         <p class="menu-text">MENU</p>
       </label>
-      <div class="menu-content">
+      <label for="menu-btn-chck" class="menu-content">
         <ul>
           <li class="menu-content__imgList">
-            <a href="./#">
+            <a href="./#" class="menu-link">
               <img src="./img/logo-objeck@2x.png" alt="logo-object@2x.png" class="menu-content__img">
             </a>
           </li>
-          <li><a href="./about.html">ABOUT US</a></li>
-          <li><a href="./#works-culture">WORKS</a></li>
-          <li><a href="./#works-culture">CULTURE</a></li>
-          <li><a href="./#topic">TOPICS</a></li>
-          <li><a href="./contact.html">CONTACT</a></li>
+          <li><a href="./about.html" class="menu-link">ABOUT US</a></li>
+          <li><a href="./#works" class="menu-link">WORKS</a></li>
+          <li><a href="./#culture" class="menu-link">CULTURE</a></li>
+          <li><a href="./#topic" class="menu-link">TOPICS</a></li>
+          <li><a href="./#contact" class="menu-link">CONTACT</a></li>
         </ul>
-      </div>
+      </label>
       <div class="menu-other-bg"></div>
 
        <section class="about" id="about">
@@ -82,26 +82,28 @@
           <div class="about__background-gray"></div>
        </section>
 
-       <serction class="works-culture" id="works-culture">
+       <serction class="works-and-culture">
         <div class="works-culture__background">
-          <div class="works-culture">
-            <h3 class="contents__heading">WORKS</h3>
-            <img src="./img/works-img@2x.jpg" alt="works.jpg" class="works-culture__img">
-            <p class="works-culture__text">
-              DIGSMILEの制作実績を紹介します。
-            </p>
-            <div class="link__button link__button__works-culture">
-              <a href="./#" class="link">READ MORE</a>
+          <div class="works-culture__contents">
+            <div class="works-culture" id="works">
+              <h3 class="contents__heading">WORKS</h3>
+              <img src="./img/works-img@2x.jpg" alt="works.jpg" class="works-culture__img">
+              <p class="works-culture__text">
+                DIGSMILEの制作実績を紹介します。
+              </p>
+              <div class="link__button link__button__works-culture">
+                <a href="./#" class="link">READ MORE</a>
+              </div>
             </div>
-          </div>
-          <div class="works-culture">
-            <h3 class="contents__heading">CULTURE</h3>
-            <img src="./img/culture-img@2x.jpg" alt="culture.jpg" class="works-culture__img">
-            <p class="works-culture__text">
-              DIGSMILEの社内文化について紹介します。
-            </p>
-            <div class="link__button link__button__works-culture">
-              <a href="./#" class="link">READ MORE</a>
+            <div class="works-culture" id="culture">
+              <h3 class="contents__heading">CULTURE</h3>
+              <img src="./img/culture-img@2x.jpg" alt="culture.jpg" class="works-culture__img">
+              <p class="works-culture__text">
+                DIGSMILEの社内文化について紹介します。
+              </p>
+              <div class="link__button link__button__works-culture">
+                <a href="./#" class="link">READ MORE</a>
+              </div>
             </div>
           </div>
         </div>
@@ -136,21 +138,22 @@
         </div>
        </section>
 
-       <section class="contact">
+       <section class="contact" id="contact">
         <div class="contact__background">
           <div class="contact__contents">
             <div class="contact__contents-left">
+              <img src="./img/recruit-img@2x.jpg" alt="contact-hv.jpg" class="contact__img">
+            </div>
+
+            <div class="contact__contents-right">
               <h3 class="contents__heading">CONTACT</h3>
               <p class="contact__text">
                 制作の依頼、取材の依頼、IRや採用についての連絡・お問い合わせはコンタクトページから承っております。<br>
                 まずはお気軽にご連絡ください。担当者から改めて返信いたします。
               </p>
               <div class="link__button link__button__contact">
-                <a href="./#" class="link">READ MORE</a>
+                <a href="./contact.html" class="link">READ MORE</a>
               </div>
-            </div>
-            <div class="contact__contetns-right">
-              <img src="./img/contact-hv.jpg" alt="contact-hv.jpg" class="contact__img">
             </div>
           </div>
         </div>
