@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <base href="{{site.github.url}}" charset="utf-8"/>
+    <base href="{{site.github.url}}"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="./js/slick-theme.css" media="screen">
     <!-- my css -->
     <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/index-sp.css">
     <!-- javascript -->
     <!-- Font Awesome -->
     <link rel="stylesheet" 
@@ -33,51 +34,56 @@
       <nav class="hNav">
         <div class="hNavWrap">
           <ul class="hNav__left">
-              <li class="hNav__leftItem">
-                <a href="./index.html" class="hNav__leftLink">
-                  <img src="./img/logo.svg" alt="logo.svg" class="hNav__leftLinkLogo">
-                </a>
-              </li>
-            </ul>
-            <ul class="hNav__right">
-              <li class="hNav__rightItem">
-                <a href="./news/2030.02.01.html" class="hNav__rightLink">
-                  <span>NEWS</span>
-                </a>
-              </li>
-              <li class="hNav__rightItem">
-                <a href="./service.html" class="hNav__rightLink">
-                  <span>SERVICE</span>
-                </a>
-              </li>
-              <li class="hNav__rightItem">
-                <a href="./works.html" class="hNav__rightLink">
-                  <span>WORKS</span>
-                </a>
-              </li>
-              <li class="hNav__rightItem">
-                <a href="./company.html" class="hNav__rightLink">
-                  <span>COMPANY</span>
-                </a>
-              </li>
-              <li class="hNav__rightItem">
-                <a href="./recruit.html" class="hNav__rightLink">
-                  <span>RECRUIT</span>
-                </a>
-              </li>
-              <li class="hNav__rightItem">
-                <a href="./contact.html" class="hNav__rightLink">
-                  <span>CONTACT</span>
-                </a>
-              </li>
-            </ul>
+            <li class="hNav__leftItem">
+              <a href="./index.html" class="hNav__leftLink">
+                <img src="./img/logo.svg" alt="logo.svg" class="hNav__leftLinkLogo">
+              </a>
+            </li>
+          </ul>
+          <div class="hNav__hamburger">
+            <span class="hNav__hamburger__bar"></span>
+          </div>
+          <ul class="hNav__right">
+            <li class="hNav__rightItem">
+              <a href="./news.html" class="hNav__rightLink">
+                <span>NEWS</span>
+              </a>
+            </li>
+            <li class="hNav__rightItem">
+              <a href="./service.html" class="hNav__rightLink">
+                <span>SERVICE</span>
+              </a>
+            </li>
+            <li class="hNav__rightItem">
+              <a href="./works.html" class="hNav__rightLink">
+                <span>WORKS</span>
+              </a>
+            </li>
+            <li class="hNav__rightItem">
+              <a href="./company.html" class="hNav__rightLink">
+                <span>COMPANY</span>
+              </a>
+            </li>
+            <li class="hNav__rightItem">
+              <a href="./recruit.html" class="hNav__rightLink">
+                <span>RECRUIT</span>
+              </a>
+            </li>
+            <li class="hNav__rightItem">
+              <a href="./contact.html" class="hNav__rightLink">
+                <span>CONTACT</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
         <!-- ヘッダーナビ　ここまで -->
         <div class="TopView__wrap">
           <div class="TopView__headingWrap">
             <h1 class="TopView__heading">WEB DESIGN SPECIALIST</h1>
-            <h3 class="TopView__subHeading">お客様の夢を叶えるWebサイトを制作</h3>
+            <h3 class="TopView__subHeading">
+              お客様の夢を叶える<span class="break"></span>Webサイトを制作
+            </h3>
             <div class="TopView__linkButton contents__linkButton">
              <a href="#contact" class="TopView__Link contents__link">CONTACT</a>
             </div>
@@ -168,7 +174,7 @@
                 <img src="./img/works/smoothiesta.jpg" alt="smootiesta.jpg" class="works__img">
               </li>
               <li>
-                <img src="./img/works/web-conference.jpg" alt="web-conference.jpg class="works__img">
+                <img src="./img/works/web-conference.jpg" alt="web-conference.jpg" class="works__img">
               </li>
               <li>
                 <img src="./img/works/lamina.jpg" alt="lamina.jpg" class="works__img">
@@ -176,7 +182,7 @@
             </ul>
           </div>
           <div class="works__right">
-            <div class="contents__headingWrap">
+            <div class="contents__headingWrap works__headingWrap">
               <h2 class="contents__heading">WORKS</h2>
               <small class="contents__subHeading">制作実績</small>
             </div>
@@ -202,8 +208,8 @@
           </div>
           <p class="company__text">
             お客様の夢を叶えること。<br>
-            それがWebサイトのゴールであり、私たちが目指すことです。<br>
-            だからこそちゃんと成果を出すサイトを全力でお作りします。<br>
+            それがWebサイトのゴールであり、<span class="break"></span>私たちが目指すことです。<br>
+            だからこそちゃんと成果を出すサイトを<span class="break"></span>全力でお作りします。<br>
             お客様の笑顔を見たい。<br>
             夢を実現する手助けをさせてください。
           </p>
@@ -215,6 +221,11 @@
 
       <section class="recruit" id="recruit">
         <div class="recruit__wrap">
+
+          <div class="recruit__imgWrap">
+            <img src="./img/recruit.jpg" alt="recruit.jpg" class="recruit__img">
+          </div>
+
           <div class="recruit__headingWrap">
             <div class="contents__headingWrap">
               <h2 class="contents__heading">RECRUIT</h2>
@@ -227,7 +238,7 @@
               <a href="./recruit.html" class="recruit__link contents__link">MORE</a>
             </div>
           </div>
-          <img src="./img/recruit.jpg" alt="recruit.jpg" class="recruit__img">
+          
         </div>
       </section>
 
@@ -238,7 +249,7 @@
             <small class="contents__subHeading">お問い合わせ</small>
           </div>
           <p class="contact__text">
-            Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。
+            Webサイトの制作のご依頼やお見積りなど、<span class="break"></span>お気軽にご相談ください。
           </p>
           <div class="contents__linkButton">
             <a href="./contact.html" class="contents__link">MORE</a>
@@ -251,7 +262,7 @@
       <nav class="fNav">
         <ul class="fNav__list">
           <li class="fNav__item">
-            <a href="./news.html" class="fNav__link">NEWS</a>
+            <a href="/news.html" class="fNav__link">NEWS</a>
           </li>
           <li class="fNav__item">
             <a href="./service.html" class="fNav__link">SERVICE</a>

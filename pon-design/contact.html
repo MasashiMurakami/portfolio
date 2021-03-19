@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <base href="{{site.github.url}}" charset="utf-8"/>
+    <base href="{{site.github.url}}"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,9 +39,12 @@
                 </a>
               </li>
             </ul>
+            <div class="hNav__hamburger">
+              <span class="hNav__hamburger__bar"></span>
+            </div>
             <ul class="hNav__right">
               <li class="hNav__rightItem">
-                <a href="./news/2030.02.01.html" class="hNav__rightLink">
+                <a href="./news.html" class="hNav__rightLink">
                   <span>NEWS</span>
                 </a>
               </li>
@@ -97,20 +100,30 @@
       
       <section class="contactPage">
          <p class="contactPage__heading">
-          Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。
+          Webサイトの制作のご依頼やお見積りなど、<span class="break"></span>お気軽にご相談ください。
          </p>
 
          <div class="contactPageForm__wrap">
             <form action="#" method="POST" class="contactPageForm">
               <p class="contactPageForm__h req">お問い合わせ種別</p>
-              <input type="radio" name="type" id="type" required>
-              <span class="contactPageForm__radio">お仕事のご依頼・ご相談</span>
-              <input type="radio" name="type" id="type">
-              <span class="contactPageForm__radio">お見積りのご依頼</span>
-              <input type="radio" name="type" id="type">
-              <span class="contactPageForm__radio">採用について</span>
-              <input type="radio" name="type" id="type">
-              <span class="contactPageForm__radio">その他</span>
+              <ul class="contact__radioList">
+                <li class="contact__radioItem">
+                  <input type="radio" name="type" required>
+                  <span class="contactPageForm__radio">お仕事のご依頼・ご相談</span>
+                </li>
+                <li class="contact__radioItem">
+                  <input type="radio" name="type">
+                  <span class="contactPageForm__radio">お見積りのご依頼</span>
+                </li>
+                <li class="contact__radioItem">
+                  <input type="radio" name="type">
+                  <span class="contactPageForm__radio">採用について</span>
+                </li>
+                <li class="contact__radioItem">
+                  <input type="radio" name="type">
+                  <span class="contactPageForm__radio">その他</span>
+                </li>
+              </ul>
               <label for="name">
                 <p class="contactPageForm__h req">お名前</p>
                 <input type="text" name="name" id="name" class="input__txt" required maxlength="30">
@@ -144,7 +157,7 @@
                   <option value="5">その他</option>
                 </select>
               </label>
-              <div class="contents__linkButton">
+              <div class="contents__linkButton contact__linkWrap">
                 <button type="submit" class="contents__link contactForm__link">
                   <span>送信する</span>
                 </button>

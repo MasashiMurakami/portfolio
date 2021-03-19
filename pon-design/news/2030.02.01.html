@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <base href="{{site.github.url}}" charset="utf-8"/>
+    <base href="{{site.github.url}}"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,9 +50,12 @@
                 </a>
               </li>
             </ul>
+            <div class="hNav__hamburger">
+              <span class="hNav__hamburger__bar"></span>
+            </div>
             <ul class="hNav__right">
               <li class="hNav__rightItem">
-                <a href="#" class="hNav__rightLink">
+                <a href="../news.html" class="hNav__rightLink">
                   <span>NEWS</span>
                 </a>
               </li>
@@ -118,7 +121,9 @@
               <dt class="article__infoText">2030.02.01</dt>
               <div class="news__category"><span>制作実績</span></div>
           </dl>
-          <img src="../img/news-article.jpg" alt="news-article.jpg" class="article__img">
+          <div class="article__imgWrap">
+            <img src="../img/news-article.jpg" alt="news-article.jpg" class="article__img">
+          </div>
           <p class="article__text">
             テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
           </p>
@@ -136,51 +141,65 @@
         </div>
         <div class="article__footer">
           <div class="social">
-            <!-- Facebook Good Button -->
-            <div class="fb-like"
-                 data-href="http://127.0.0.1:5500/news/2030.02.01.html"
-                 data-width="30px"
-                 data-layout="button_count"
-                 data-action="like"
-                 data-size="large"
-                 data-share="true">
-            </div>
-            <!-- Twitter Share Button -->
-            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-               class="twitter-share-button"
-               data-show-count="false"
-               data-size="large">
-              Tweet
-            </a>
-            <!-- Hatena Bookmark Button -->
-            <a href="https://b.hatena.ne.jp/entry/"
-               class="hatena-bookmark-button"
-               data-hatena-bookmark-layout="basic-label"
-               data-hatena-bookmark-lang="ja"
-               data-hatena-bookmark-height="30"
-               title="このエントリーをはてなブックマークに追加">
-               <img src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
-            </a>
-            <!-- LINE Share Button -->
-            <div class="line-it-button"
-                 data-lang="ja"
-                 data-type="share-b"
-                 data-ver="3" 
-                 data-url="http://127.0.0.1:5500/news/2030.02.01.html" data-color="default" 
-                 data-size="small" 
-                 data-count="false" 
-                 style="display: none;">
-            </div>
+            <ul class="social__list">
+              <li class="social__listItem">
+                <!-- Facebook Good Button -->
+                <div class="fb-like"
+                     data-href="http://127.0.0.1:5500/news/2030.02.01.html"
+                     data-width="30px"
+                     data-layout="button_count"
+                     data-action="like"
+                     data-size="large"
+                     data-share="true">
+                </div>
+              </li>
+              <li class="social__listItem">
+                <!-- Twitter Share Button -->
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+                   class="twitter-share-button"
+                   data-show-count="false"
+                   data-size="large">
+                  Tweet
+                </a>
+              </li>
+              <li class="social__listItem">
+                <!-- Hatena Bookmark Button -->
+                <a href="https://b.hatena.ne.jp/entry/"
+                   class="hatena-bookmark-button"
+                   data-hatena-bookmark-layout="basic-label"
+                   data-hatena-bookmark-lang="ja"
+                   data-hatena-bookmark-height="30"
+                   title="このエントリーをはてなブックマークに追加">
+                   <img src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
+                </a>
+              </li>
+              <li class="social__listItem">
+                <!-- LINE Share Button -->
+                <div class="line-it-button"
+                     data-lang="ja"
+                     data-type="share-b"
+                     data-ver="3" 
+                     data-url="http://127.0.0.1:5500/news/2030.02.01.html" data-color="default" 
+                     data-size="small" 
+                     data-count="false" 
+                     style="display: none;">
+                </div>
+              </li>
+            </ul>
           </div>
           <div class="article__linkWrap">
             <div class="article__linkWrap-left">
               <a href="#" class="article__link article__link-left">
-                Web Conference様のサイトを制作いたしました
+                <p class="article__linkText">
+                  Web Conference様のサイトを制作いたしました
+                </p>
               </a>
             </div>
             <div class="article__linkWrap-right">
               <a href="#" class="article__link article__link-right">
-                プライバシーマーク取得のお知らせ
+                <p class="article__linkText">
+                  プライバシーマーク取得のお知らせ
+                </p>
               </a>
             </div>
           </div>
@@ -199,7 +218,7 @@
             <small class="contents__subHeading">お問い合わせ</small>
           </div>
           <p class="contact__text">
-            Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。
+            Webサイトの制作のご依頼やお見積りなど、<span class="break"></span>お気軽にご相談ください。
           </p>
           <div class="contents__linkButton">
             <a href="../contact.html" class="contents__link">MORE</a>
