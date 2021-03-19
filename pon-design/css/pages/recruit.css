@@ -7,7 +7,7 @@
 /* recruit */
 /*         */
 .recruitPage__wrap {
-  background: url(/img/bg-geometry.png);
+  background: url(../../img/bg-geometry.png);
   padding-bottom: 110px;
 }
 
@@ -47,7 +47,7 @@
   height: 780px;
   margin-top: 38px;
   overflow: hidden;
-  background: url(/img/recruit01.jpg) center center no-repeat;
+  background: url(../../img/recruit01.jpg) center center no-repeat;
   background-size: cover;
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
 }

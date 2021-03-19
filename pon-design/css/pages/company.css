@@ -10,8 +10,9 @@
   max-width: 1260px;
   margin: 0 auto;
   padding: 0 20px;
-  background: url(/img/bg-circle.png) center center no-repeat;
+  background: url(../../img/bg-circle.png) center center no-repeat;
   background-size: contain;
+  overflow: hidden;
   position: relative;
 }
 
@@ -22,36 +23,43 @@
   left: 0px;
   width: 100%;
   height: 100%;
-  background: url(/img/bg-face.png) center center no-repeat;
+  background: url(../../img/bg-face.png) center center no-repeat;
   z-index: -10;
 }
 
 .company__headingWrap {
-  padding-top: 135px;
+  padding-top: 93px;
+}
+
+.company__heading {
+  font-size: 3.2rem;
 }
 
 .company__copyWrap {
-  max-width: 666px;
-  margin: 30px auto 0;
+  max-width: 769px;
+  width: 100%;
+  margin: 25px auto 0;
+  display: flex;
+  align-items: baseline;
 }
 
 .company__copy {
   font-size: 4.0rem;
   font-weight: normal;
   letter-spacing: 0.05em;
-  line-height: 0.64;
+  line-height: calc(4/5);
   position: relative;
 }
 
-.company__copy::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 0px;
+.company__copyList {
+  max-width: 700px;
   width: 100%;
-  border-bottom: solid 12px #F5F534;
-  z-index: -10;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  border-bottom: 12px solid #F5F534;
 }
+
 
 .company__text {
   max-width: 451px;
@@ -142,8 +150,12 @@
 
 
 @media screen and (max-width:768px) {
-  .company__wrap::after {
-    display: none;
+  .company__headingWrap {
+    padding-top: 55px;
+  }
+  
+  .company__heading {
+    font-size: 2.4rem;
   }
 
   .company__copy {
@@ -151,6 +163,32 @@
     margin: 0 auto;
     font-size: 3.2rem;
     line-height: calc(41/32);
+  }
+
+  .company__copyList {
+    flex-flow: column wrap;
+    border-bottom: none;
+  }
+
+  .company__copyItem {
+    width: 310px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 12px solid #F5F534;
+  }
+
+  .company__copyItem:nth-child(2) {
+    width: 290px;
+  }
+
+  .company__copy {
+    font-family: "Hiragino Sans W6";
+    font-size: 3.2rem; 
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    line-height: calc(4/5);
+    text-align: center;
   }
 
   .companyPage__contents {
