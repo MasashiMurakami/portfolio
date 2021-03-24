@@ -108,6 +108,11 @@ body {
   background-size: cover;
 }
 
+.image__04 {
+  background: url(../images/masakazu-top.JPG) center top no-repeat;
+  background-size: cover;
+}
+
 .works-contents {
   width: 400px;
   margin: 0 auto;
