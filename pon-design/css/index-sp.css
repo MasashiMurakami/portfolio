@@ -35,6 +35,7 @@
   /* news */
   /*      */
   .news__wrap {
+    width: calc( 100% - 40px );
     margin: 40px auto;
     flex-flow: column wrap;
   }
