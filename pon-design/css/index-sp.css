@@ -45,7 +45,7 @@
 
   .news__text {
     font-size: 1.4rem;
-    width: 336px;
+    max-width: 336px;
   }
 
 
