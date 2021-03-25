@@ -1,118 +1,182 @@
 <!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <base href="{{site.github.url}}" charset="utf-8"/>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Masashi Murakami Portfolio">
-    <title>My Portfolio</title>
-    <link rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.15.1/css/brands.css"
-          integrity="sha384-/feuykTegPRR7MxelAQ+2VUMibQwKyO6okSsWiblZAJhUSTF9QAVR0QLk6YwNURa" crossorigin="anonymous">
-    <link rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.15.1/css/fontawesome.css" integrity="sha384-ijEtygNrZDKunAWYDdV3wAZWvTHSrGhdUfImfngIba35nhQ03lSNgfTJAKaGFjk2" crossorigin="anonymous">
-    <link rel="icon" href="./business.png">
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- jQuery CDN -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-    <!-- <script type="text/javascript" src="./js/top-page.js"></script> -->
-  </head>
+<html>
+<head>
+  <base href="{{site.github.url}}"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='Masashi Murakami ポートフォリオ'>
+  <meta property='og:url' content='{{site.github.url}}'>
+  <meta property='og:description' content='Masashi Murakamiのポートフォリオサイトです。'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="Masashi Murakamiのポートフォリオサイトです" />
+  <title>Hanako Yamada ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="./img/favicon.ico" />
+  <link rel=”canonical” href=”URLが入る” />
+</head>
 
-  <body>
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
     <header class="header">
-      <div class="header-container">
-        <div class="icon">
-          <img src="./images/taro.png" width="120" height="120" alt="村上昌志のアイコンです">
-        </div>
-        <div class="information">
-          <div class="informain-container">
-            <h1 class="information-header">村上昌志</h1>
-            <a href="https://github.com/MasashiMurakami"
-               target="_blank"
-               title="Open Masashi Murakami Github page.">
-               <i class="fab fa-github-square fa-3x"></i>
-            </a>
-          </div>
-          <p class="information-body">フロントエンドWebデベロッパー見習いです</p>
-        </div>
+      <div class="header-inner">
+        <h1 class="header-logo">
+          <a href=".">Masashi Murakami Portfolio</a>
+        </h1>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item"><a href="#works">Works</a></li>
+            <li class="header-nav-item"><a href="#skill">Skill</a></li>
+            <li class="header-nav-item"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
-    
-    <section class="works">
-      
-      <h1 class="works-header">
-        WORKS
-      </h1>
-      
-      <div class="works__wrap">
+    <!-- /header -->
 
-        <div class="works-container">
-          <a href="./pon-design/index.html">
-            <div class="works-image image__01"></div>
-            <div class="works-contents">
-              <h1 class="works-contents-header">
-                PON DESIGN デザインカンプコーディング
-              </h1>
-              <p class="works-contents-body">
-                楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。
-              </p>
-            </div>
-          </a>
-        </div>
-        
-        <div class="works-container">
-          <a href="./cresta03/index.html">
-            <div class="works-image image__02"></div>
-            <div class="works-contents">
-              <h1 class="works-contents-header">
-                Cresta コーディング課題
-              </h1>
-              <p class="works-contents-body">
-                楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。
-              </p>
-            </div>
-          </a>
-        </div>
-    
-        <div class="works-container">
-          <a href="./KROWL03/index.html">
-            <div class="works-image image__03"></div>
-            <div class="works-contents">
-              <h1 class="works-contents-header">
-                KRWOL コーディング課題
-              </h1>
-              <p class="works-contents-body">
-                楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。
-              </p>
-            </div>
-          </a>
-        </div>
-  
-        <div class="works-container">
-          <a href="./masakazu/index.html">
-            <div class="works-image image__04"></div>
-            <div class="works-contents">
-              <h1 class="works-contents-header">
-                MASA BLOG 公開デザインカンプ
-              </h1>
-              <p class="works-contents-body">
-                楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。
-              </p>
-            </div>
-          </a>
-        </div>
+    <main class="content">
 
+      <!-- main-visual -->
+      <div class="main-visual">
+        <div class="main-visual-img"></div>
+      </div>
+      <!-- /main-visual -->
+      
+      <!-- works -->
+      <section class="works section" id="works">
+        <div class="inner">
+          <h2 class="title">Works</h2>
+          <div class="works-list">
+            <a class="works-item" href="./works-pon-design.html">
+              <p class="works-img"><img src="./images/pon-design-thumb.JPG" alt="" /></p>
+              <p class="works-name">PON DESIGN デザインカンプコーディング</p>
+              <p class="works-info">Coding (Responsive)</p>
+            </a>
+            <a class="works-item" href="./works-cresta-03.html">
+              <p class="works-img"><img src="./images/cresta-03-thumb.JPG" alt="" /></p>
+              <p class="works-name">Cresta コーディング課題</p>
+              <p class="works-info">Coding (Responsive)</p>
+            </a>
+            <a class="works-item" href="./works-krowl-03.html">
+              <p class="works-img"><img src="./images/KROWL-03-thumb.JPG" alt="" /></p>
+              <p class="works-name">KRWOL コーディング課題</p>
+              <p class="works-info">Coding</p>
+            </a>
+            <a class="works-item" href="./works-masakazu.html">
+              <p class="works-img"><img src="./images/masa-thumb.JPG" alt="" /></p>
+              <p class="works-name">MASA BLOG 公開デザインカンプ</p>
+              <p class="works-info">Coding (Responsive)</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- /works -->
+
+      <div class="profile">
+        <div class="inner">
+          <p class="profile-title">Masashi Murakami</p>
+          <p class="profile-text">
+            1982年生まれの38歳です。<br>2018年まで、東京で大学勤務（研究室助手）していました。帰郷後、独学でHTML/CSSを学び、現在はHTMLコーダーを目指して活動中。函館から世界へ、情報を発信できるデザイナー／エンジニアを目指しています。
+          </p>
+        </div>
       </div>
 
-    </section>
+      <!-- skill -->
+      <section class="skill section" id="skill">
+        <div class="inner">
+          <h2 class="title">Skill</h2>
+          <div class="skill-list">
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">HTML5/CSS3</h3>
+                <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">WordPress</h3>
+                <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">JavaScript</h3>
+                <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">Photoshop</h3>
+                <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">Illustrator</h3>
+                <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">XD</h3>
+                <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /skill -->
 
+      <!-- contact -->
+      <section class="contact section" id="contact">
+        <div class="inner">
+          <h2 class="title">Contact</h2>
+          <p class="lead">
+            お問い合わせは、<br class="sp-only">SNSかメールにてお願いいたします。
+          </p>
+          <div class="contact-list">
+            <a class="contact-item" href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a>
+            <a class="contact-item" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            <span class="contact-item">xxxxxx@gmail.com</span>
+          </div>
+        </div>
+      </section>
+      <!-- /contact -->
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
     <footer class="footer">
-      <p class="footer-body">
-        本ポートフォリオ紹介サイトは donintall.com「はじめてのHTML」を参考として作成しています。
-      </p>
-      <!-- <div class="topPage__button">
-        <a href="/portfolio/index.html" class="topPage__link">Index Page<br>に戻る</a>
-      </div> -->
+      <div class="copyright">&copy;Masashi Murakami</div>
+      <div class="copyright">
+        本Portfolio siteは、「未経験からデザイナーへ！」様が公開されている
+        デザインテンプレートを使用しています。
+      </div>
     </footer>
-  </body>
+    <!-- /footer -->
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+</body>
 </html>

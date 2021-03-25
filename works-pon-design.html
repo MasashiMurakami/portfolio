@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="{{site.github.url}}"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='Masashi Murakami ポートフォリオ'>
+  <meta property='og:url' content='{{site.github.url}}'>
+  <meta property='og:description' content='Masashi Murakamiのポートフォリオサイトです。'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="Masashi Murakamiのポートフォリオサイトです" />
+  <title>Hanako Yamada ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="./img/favicon.ico" />
+  <link rel=”canonical” href=”URLが入る” />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
+    <header class="header">
+      <div class="header-inner">
+        <h1 class="header-logo">
+          <a href=".">Masashi Murakami Portfolio</a>
+        </h1>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item"><a href="./#works">Works</a></li>
+            <li class="header-nav-item"><a href="./#skill">Skill</a></li>
+            <li class="header-nav-item"><a href="./#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+
+      <!-- sub-main-visual -->
+      <div class="sub-main-visual">
+        <div class="sub-main-visual-img"></div>
+      </div>
+      <!-- /sub-main-visual -->
+
+      <article class="article">
+        <div class="article-inner">
+          <h2 class="article-title">PON DESIGN デザインカンプコーディング</h2>
+          <p class="article-img">
+            <img src="./images/pon-design.jpg" alt="">
+          </p>
+          <div class="article-body">
+            <p>
+              制作時間：38.5時間<br>
+              構成：8ページ（レスポンシブ対応）<br>
+              デザイン：未経験からWebデザイナーへ！様が公開しているAdobe XDデータを使用<br>
+            </p>
+            <h3 class="article-info-title">URL</h3>
+            <p><a href="https://masashimurakami.github.io/portfolio/pon-design/index.html" target="_blank" rel="noopener">https://masashimurakami.github.io/portfolio</a></p>
+            <h3 class="article-info-title">担当</h3>
+            <p>コーディング</p>
+            <h3 class="article-info-title">コーディングにあたって</h3>
+            <p>
+              共通部分をCSSとしてまとめる事、スマートフォン利用時にデザインが崩れないように
+              細かくチェックする事に気をつけました。
+            </p>
+            <h3 class="article-info-title">コーディングについて</h3>
+            <p>
+              複数ページのコーディングだったので、はじめに各ページの共通部分のCSSを作成し、その後個別ページに共通部分のCSSを読み込ませています。レスポンシブ対応部分のCSSは、indexページのみ別ファイルに作成し、他のページはPC用と同一のファイルに記述しています。リンクホバー時の挙動やアニメーションは、配布先にあるデモページの挙動を確認しながら実装しました。<br>
+              javascriptはjQueryを利用しています。slick.jsによる画像のスライドショー、ヘッダーナビゲーションの変化、スコロールボタンの制御、ハンバーガーメニュークリック時の挙動、スクロールのスムージングを実装しています。
+            </p>
+            <h3 class="article-info-title">レスポンシブデザインについて</h3>
+            <p>
+              ブラウザ幅768px以下の時にレスポンシブ対応のCSSを適用させています。各コンテンツの幅を<br>
+              <code>width: calc( 100% - 40px );</code>&nbsp;<code>padding: 0 20px;</code>&nbsp;としてブラウザの左右に余白を持たせています。<br>
+
+              
+            </p>
+          </div>
+          <div class="home-link">
+            <a href="./#works">Works一覧へ</a>
+          </div>
+        </div>
+      </article>
+
+
+
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;Hanako Yamada</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+</body>
+</html>

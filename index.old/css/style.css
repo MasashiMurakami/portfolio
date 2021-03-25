@@ -1,0 +1,186 @@
+body {
+  color: #333333;
+  font-size: 62.5%;
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+.header {
+  /* background-color: #efefef; */
+  background: ;
+  padding: 32px 0;
+}
+
+.header-container {
+  width: 480px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.icon img {
+  border-radius: 50%;
+  border-width: 4px;
+  border-style: solid;
+  border-color: white;
+}
+
+.information {
+  margin-left: 32px;
+}
+
+.information-container {
+  display: flex;
+  align-items: bottom;
+}
+
+.information-header {
+  font-weight: normal;
+  font-size: 1.6rem;
+  margin: 0;
+  float: left;
+}
+
+.fab {
+  padding-left: 32px;
+  color: #7263aa;
+}
+
+.information-body {
+  margin: 16px 0 16px;
+  font-size: 1.1rem;
+}
+
+
+.works__wrap {
+  max-width: 1280px;
+  width: calc( 100% - 200px );
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.works-header {
+  font-weight: normal;
+  font-size: 2.4rem;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+.works-container {
+  width: 880px;
+  /* margin-bottom: 60px; */
+  margin: 0 auto 60px;
+  background-color: #efefef;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.works-container a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  text-decoration: none;
+  color: #333333;
+}
+
+.works-container:hover {
+  transform: translate(0, -20px);
+  transition: all 0.3s;
+}
+
+.works-image {
+  width: 400px;
+  height: 260px;
+  margin: 0 auto;
+  border: 5px solid #ffffff;
+}
+
+.image__01 {
+  background: url(../images/pondesign-top.JPG) center top no-repeat;
+  background-size: cover;
+}
+
+.image__02 {
+  background: url(../images/cresta03-top.JPG) center top no-repeat;
+  background-size: cover;
+}
+
+.image__03 {
+  background: url(../images/KROWL03-top.JPG) center top no-repeat;
+  background-size: cover;
+}
+
+.image__04 {
+  background: url(../images/masakazu-top.JPG) center top no-repeat;
+  background-size: cover;
+}
+
+.works-contents {
+  width: 400px;
+  margin: 0 auto;
+  
+}
+
+.works-contents-header {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.works-contents-body {
+  font-size: 1.0rem;
+  line-height: 1.8;
+}
+
+
+
+.footer {
+  background-color: #efefef;
+  padding: 32px 0;
+}
+
+.footer-body {
+  text-align: center;
+  font-size: 0.5rem;
+  color: gray;
+}
+
+
+
+.topPage__button {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  width: 150px;
+  height: 150px;
+  background-color: #efefef;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease 0s;
+}
+
+.topPage__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  text-decoration: none;
+  color: #333;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.3s ease 0s;
+}
