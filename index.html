@@ -10,10 +10,12 @@
   <meta property='og:description' content='Masashi Murakamiのポートフォリオサイトです。'>
   <meta property="og:image" content="img/ogp.png">
   <meta name="description" content="Masashi Murakamiのポートフォリオサイトです" />
-  <title>Hanako Yamada ポートフォリオ</title>
+  <title>Masashi Murakami ポートフォリオ</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/brands.css" integrity="sha384-/feuykTegPRR7MxelAQ+2VUMibQwKyO6okSsWiblZAJhUSTF9QAVR0QLk6YwNURa" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/fontawesome.css" integrity="sha384-ijEtygNrZDKunAWYDdV3wAZWvTHSrGhdUfImfngIba35nhQ03lSNgfTJAKaGFjk2" crossorigin="anonymous">
   <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
   <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="./img/favicon.ico" />
@@ -52,26 +54,64 @@
       <section class="works section" id="works">
         <div class="inner">
           <h2 class="title">Works</h2>
+          <div class="article-inner">
+            <h2 class="article-title">PON DESIGN デザインカンプコーディング</h2>
+            <p class="article-img">
+              <img src="./images/pon-design.jpg" alt="">
+            </p>
+            <div class="article-body works-feature-body">
+              <p>
+                制作時間：38.5時間<br>
+                構成：8ページ（レスポンシブ対応）<br>
+                デザイン：未経験からWebデザイナーへ！様が公開しているAdobe XDデータを使用<br>
+              </p>
+              <h3 class="article-info-title">URL</h3>
+              <p>
+                <a href="https://masashimurakami.github.io/portfolio/pon-design/index.html" target="_blank" rel="noopener">https://masashimurakami.github.io/portfolio</a>
+              </p>
+              <h3 class="article-info-title">担当</h3>
+              <p>コーディング</p>
+              <h3 class="article-info-title">コーディングにあたって</h3>
+              <p>
+                共通部分をCSSとしてまとめる事、スマートフォン利用時にデザインが崩れないように
+                細かくチェックする事に気をつけました。
+              </p>
+              <h3 class="article-info-title">CSS, javascriptについて</h3>
+              <p>
+                複数ページのコーディングだったので、はじめに各ページの共通部分のCSSを作成し、その後個別ページに共通部分のCSSを読み込ませています。レスポンシブ対応部分のCSSは、indexページのみ別ファイルに作成し、他のページはPC用と同一のファイルに記述しています。リンクホバー時の挙動やアニメーションは、配布先にあるデモページの挙動を確認しながら実装しました。<br>
+                javascriptはjQueryを利用しています。slick.jsによる画像のスライドショー、ヘッダーナビゲーションの変化、スコロールボタンの制御、ハンバーガーメニュークリック時の挙動、スクロールのスムージングを実装しています。
+              </p>
+              <h3 class="article-info-title">レスポンシブデザインについて</h3>
+              <p>
+                ブラウザ幅768px以下の時にレスポンシブ対応のCSSを適用させています。各コンテンツの幅を
+                <code>width: calc( 100% - 40px );</code>&nbsp;&nbsp;<code>padding: 0 20px;</code>&nbsp;としてブラウザの左右に余白を持たせています。<br>
+              </p>
+          </div>
+          </div>
+          <h2 class="article-title">その他の制作物</h2>
           <div class="works-list">
-            <a class="works-item" href="./works-pon-design.html">
-              <p class="works-img"><img src="./images/pon-design-thumb.JPG" alt="" /></p>
-              <p class="works-name">PON DESIGN デザインカンプコーディング</p>
-              <p class="works-info">Coding (Responsive)</p>
-            </a>
             <a class="works-item" href="./works-cresta-03.html">
               <p class="works-img"><img src="./images/cresta-03-thumb.JPG" alt="" /></p>
               <p class="works-name">Cresta コーディング課題</p>
-              <p class="works-info">Coding (Responsive)</p>
+              <div class="works-category">
+                <span class="works-info">Coding</span>
+                <span class="works-info">Responsive</span>
+              </div>
             </a>
             <a class="works-item" href="./works-krowl-03.html">
               <p class="works-img"><img src="./images/KROWL-03-thumb.JPG" alt="" /></p>
               <p class="works-name">KRWOL コーディング課題</p>
-              <p class="works-info">Coding</p>
+              <div class="works-category">
+                <span class="works-info">Coding</span>
+              </div>
             </a>
             <a class="works-item" href="./works-masakazu.html">
               <p class="works-img"><img src="./images/masa-thumb.JPG" alt="" /></p>
               <p class="works-name">MASA BLOG 公開デザインカンプ</p>
-              <p class="works-info">Coding (Responsive)</p>
+              <div class="works-category">
+                <span class="works-info">Coding</span>
+                <span class="works-info">Responsive</span>
+              </div>
             </a>
           </div>
         </div>
@@ -80,7 +120,12 @@
 
       <div class="profile">
         <div class="inner">
-          <p class="profile-title">Masashi Murakami</p>
+          <div class="profile-inner">
+            <p class="profile-title">Masashi Murakami</p>
+            <a class="profile-link" href="https://github.com/MasashiMurakami" target="_blank" target="_blank" title="Open Masashi Murakami Github page.">
+              <i class="fab fa-github-square fa-3x"></i>
+            </a>
+          </div>
           <p class="profile-text">
             1982年生まれの38歳です。<br>2018年まで、東京で大学勤務（研究室助手）していました。帰郷後、独学でHTML/CSSを学び、現在はHTMLコーダーを目指して活動中。函館から世界へ、情報を発信できるデザイナー／エンジニアを目指しています。
           </p>
@@ -93,51 +138,57 @@
           <h2 class="title">Skill</h2>
           <div class="skill-list">
             <div class="skill-item">
-              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <p class="skill-img">
+                <img src="./images/check_mark_circle_icon_125343.png" alt="">
+              </p>
               <div class="skill-body">
                 <h3 class="skill-name">HTML5/CSS3</h3>
                 <p class="skill-text">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+                  文書構造とコンテンツカテゴリーを意識したマークアップを心がけています。CSSでは各ページの共通部分と個別部分を分けて設計しています。Sass勉強中。</p>
               </div>
             </div>
             <div class="skill-item">
-              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <p class="skill-img">
+                <img src="./images/arrow_right_circle_icon_125379.png" class="onStudy" alt="">
+              </p>
               <div class="skill-body">
                 <h3 class="skill-name">WordPress</h3>
                 <p class="skill-text">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+                  現在勉強中です。</p>
               </div>
             </div>
             <div class="skill-item">
-              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <p class="skill-img"><img src="./images/check_mark_circle_icon_125343.png" alt=""></p>
               <div class="skill-body">
                 <h3 class="skill-name">JavaScript</h3>
                 <p class="skill-text">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+                  web上で調べながら実装が可能なレベルです。jQueryとそのライブラリを使用しているjavascirptが適用できます。</p>
               </div>
             </div>
             <div class="skill-item">
-              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <p class="skill-img"><img src="./images/check_mark_circle_icon_125343.png" alt=""></p>
               <div class="skill-body">
                 <h3 class="skill-name">Photoshop</h3>
                 <p class="skill-text">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+                  現在はweb上のPhotopeaを使ってPhotoshopの操作感覚を学んでいます。各レイヤー、オブジェクトからのプロパティの取得、画像の切り出しなどが行えます。</p>
               </div>
             </div>
             <div class="skill-item">
-              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <p class="skill-img">
+                <img src="./images/arrow_right_circle_icon_125379.png" class="onStudy" alt="">
+              </p>
               <div class="skill-body">
                 <h3 class="skill-name">Illustrator</h3>
                 <p class="skill-text">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+                  前職でプレゼンテーション資料（ポスター）作成の経験があります。各種操作が行えます。Webデザインでの使い方について勉強中です。</p>
               </div>
             </div>
             <div class="skill-item">
-              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <p class="skill-img"><img src="./images/check_mark_circle_icon_125343.png" alt=""></p>
               <div class="skill-body">
                 <h3 class="skill-name">XD</h3>
                 <p class="skill-text">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+                  デザインデータから各種プロパティを取得、画像の切り出しなど行えます。デザインデータからのコーディングが可能です。</p>
               </div>
             </div>
           </div>
@@ -150,12 +201,10 @@
         <div class="inner">
           <h2 class="title">Contact</h2>
           <p class="lead">
-            お問い合わせは、<br class="sp-only">SNSかメールにてお願いいたします。
+            お問い合わせは、<br class="sp-only">メールにてお願いいたします。
           </p>
           <div class="contact-list">
-            <a class="contact-item" href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a>
-            <a class="contact-item" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
-            <span class="contact-item">xxxxxx@gmail.com</span>
+            <span class="contact-item">webmasa[at]]outlook.com</span>
           </div>
         </div>
       </section>
