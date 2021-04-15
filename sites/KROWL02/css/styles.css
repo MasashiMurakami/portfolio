@@ -1,0 +1,145 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "游ゴシック", "Yu Gothic";
+  min-width: 1000px;
+  background-color: #FFFFF3;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+}
+
+.header {
+  padding-top: 40%;
+  background: url(../img/bg-main_visual.jpg) center/cover no-repeat;
+}
+
+.header__title__wrapper {
+  padding: 0 0 60px 60px;
+}
+
+.section__header {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 3.2rem;
+}
+
+.section__body__text {
+  font-size: 1.6rem;
+  line-height: 2.0;
+  text-align: center;
+}
+
+.white {
+  color: #fff;
+}
+
+
+/*            */
+/* section 01 */
+/*            */
+.section01__wrapper {
+  padding-bottom: 100px;
+}
+
+
+/*            */
+/* section 02 */
+/*            */
+.section02__wrapper {
+  background: url(../img/bg-content.jpg) center/cover no-repeat;
+  background-attachment: fixed;
+  padding-bottom: 100px;
+}
+
+.section02__bg {
+  width: 960px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.section02__contents__wrapper {
+  width: 860px;
+  padding: 50px 0;
+  margin: 0 auto;
+}
+
+.section02__content {
+  height: 280px;
+  display: flex;
+}
+
+.section02__content:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.section02__body {
+  background-color: #fffff3;
+}
+
+.section02__body__header {
+  padding: 40px 0 0 20px;
+  font-size: 2.0rem;
+  line-height: 1.75;
+}
+
+.section02__text {
+  padding: 20px;
+  text-align: left;
+  line-height: 1.75;
+}
+
+
+/*            */
+/* section 03 */
+/*            */
+.section03__contents__wrapper {
+  width: 780px;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+}
+
+.section03__contents__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+/*        */
+/* footer */
+/*        */
+.footer {
+  height: 60px;
+  background-color: #000;
+  color: #FFF;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.footer__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+}
+
+.footer__list {
+  display: flex;
+}
+
+.footer__link {
+  padding-left: 20px;
+}

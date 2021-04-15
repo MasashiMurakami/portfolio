@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="{{site.github.url}}"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='Masashi Murakami ポートフォリオ'>
+  <meta property='og:url' content='{{site.github.url}}'>
+  <meta property='og:description' content='Masashi Murakamiのポートフォリオサイトです。'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="Masashi Murakamiのポートフォリオサイトです" />
+  <title>Masashi Murakami ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="/css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="/css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="" />
+  <link rel=”canonical” href=”” />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
+    <header class="header">
+      <div class="header-inner">
+        <h1 class="header-logo">
+          <a href="/#">Masashi Murakami Portfolio</a>
+        </h1>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item"><a href="/#works">Works</a></li>
+            <li class="header-nav-item"><a href="/#skill">Skill</a></li>
+            <li class="header-nav-item"><a href="/#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+
+      <!-- sub-main-visual -->
+      <div class="sub-main-visual">
+        <div class="sub-main-visual-img"></div>
+      </div>
+      <!-- /sub-main-visual -->
+
+      <article class="article">
+        <div class="article-inner">
+          <h2 class="article-title">MASA BLOG 公開デザインカンプ</h2>
+          <p class="article-img">
+            <img src="/images/masa.jpg" alt="">
+          </p>
+          <div class="article-body">
+            <p>
+              制作時間： 6時間<br>
+              構成：1ページ（レスポンシブ対応）<br>
+              デザイン：MASA BLOG様が公開しているXDデータを使用<br>
+            </p>
+            <h3 class="article-info-title">URL</h3>
+            <!-- <p><a href="https://masashimurakami.github.io/portfolio/sites/masakazu/index.html" target="_blank" rel="noopener">https://masashimurakami.github.io/portfolio</a></p> -->
+            <p><a href="/sites/masakazu/index.html" target="_blank" rel="noopener">https://masashimurakami.github.io/portfolio</a></p>
+            <h3 class="article-info-title">担当</h3>
+            <p>コーディング</p>
+            <h3 class="article-info-title">コーディングにあたって</h3>
+            <p>
+              コンテンツの配置、余白、フォント指定などひとつずつ確認しながらコーディングを行いました。フォームは各項目にラベルを配置する事や<code>required</code>属性をつける事によって利便性を高めています。
+            </p>
+            <h3 class="article-info-title">CSS, javascriptについて</h3>
+            <p>
+              ナビゲーションメニューを<code>position:fixed</code>とした他、レスポンシブ対応はデモサイトを見ながら独自に実装しました。
+            </p>
+            <h3 class="article-info-title">レスポンシブデザインについて</h3>
+            <p>
+              <code>width:768px</code>以下の時にレスポンシブ対応のCSSを適用しています。コンテンツの改行位置を調整しレスポンシブ対応時に見やすいレイアウトを心がけました。
+            </p>
+          </div>
+          <div class="home-link">
+            <a href="/#works">Works一覧へ</a>
+          </div>
+        </div>
+      </article>
+
+
+
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;Masashi Murakami</div>
+      <div class="copyright">
+        本Portfolio siteは、「未経験からデザイナーへ！」様が公開されている
+        デザインテンプレートを使用しています。
+      </div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+</body>
+</html>
